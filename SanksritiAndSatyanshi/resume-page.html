@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link rel="stylesheet" href="./resume-page.css">
+</head>
+
+<body>
+   
+    <section class="app-container" >
+        <div id="noResult" class="no-results hidden">
+            <img src="./images.png" alt="Sad emoji">
+            <p class="no-result-text">No results found</p>
+        </div>
+       
+        <div class="keyword-input">
+            <input type="text" id="searchResume" name="searchResume"
+                placeholder="Search for keywords to filter the resumes">
+                <div class="buttonPrev-container">
+            <button type="button" class="Previous">Previous</button>
+        </div>
+            <div class="buttonNext-container">
+            <button type="button" class="Next">Next</button>
+        </div>
+        </div>
+        
+        <section class="resume" >
+            <div class="top-section">
+                <div class="name"></div>
+                <div class="AppliedFor"></div>
+                <div class="image"></div>
+
+            </div>
+
+            <div class="Personal-info-grid">
+                <div class="Personal-info">Peronal Information</div>
+                <div class="phone"></div>
+                <div class="email"></div>
+                <!--check this <a class ="myLink" id="myLink">LinkedIn</a> -->
+                <div class="Personal-info">Technical Skills</div>
+                <div class="keyword1"></div>
+                <div class="keyword2"></div>
+                <div class="keyword3"></div>
+                <div class="Personal-info">Hobbies</div>
+                <div class="hobby1"></div>
+                <div class="hobby2"></div>
+                <div class="hobby3"></div>
+            </div>
+
+            <div class="MainBody">
+                <div class="headings">Work Experience in previous company</div>
+                <div class="CompanyName">Company Name:</div>
+                <div class="Position">Position:</div>
+                <div class="StartDate">Start Date:</div>
+                <div class="EndDate">End Date:</div>
+                <div class="Summary">Summary:</div>
+
+                <div class="headings">Projects</div>
+                <div class="ProjectName"></div>
+                <div class="ProjectNameDesc"></div>
+                <div class="headings">Education</div>
+                <div class="UG"></div>
+                <div class="PU"></div>
+                <div class="HS"></div>
+                <div class="headings">Internship</div>
+                <div class="ICompanyName">Company Name:</div>
+                <div class="IPosition">Position:</div>
+                <div class="IStartDate">Start Date:</div>
+                <div class="IEndDate">End Date:</div>
+                <div class="ISummary">Summary:</div>
+                <div class="headings">Achievements</div>
+                <div class="ASummary"></div>
+            </div>
+
+        </section>
+
+
+    <script src="resume-page.js"></script>
+    </section>
+</body>
+
+</html>
