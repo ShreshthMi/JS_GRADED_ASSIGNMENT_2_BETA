@@ -10,25 +10,26 @@
 </head>
 
 <body>
-   
-    <section class="app-container" >
+
+    <section class="app-container">
+        <div class="keyword-input">
+            <input type="text" id="searchResume" name="searchResume"
+                placeholder="Search for keywords to filter the resumes">
+            <div class="buttonPrev-container">
+                <button type="button" class="Previous">Previous</button>
+            </div>
+            <div class="buttonNext-container">
+                <button type="button" class="Next">Next</button>
+            </div>
+        </div>
         <div id="noResult" class="no-results hidden">
             <img src="./images.png" alt="Sad emoji">
             <p class="no-result-text">No results found</p>
         </div>
-       
-        <div class="keyword-input">
-            <input type="text" id="searchResume" name="searchResume"
-                placeholder="Search for keywords to filter the resumes">
-                <div class="buttonPrev-container">
-            <button type="button" class="Previous">Previous</button>
-        </div>
-            <div class="buttonNext-container">
-            <button type="button" class="Next">Next</button>
-        </div>
-        </div>
+
         
-        <section class="resume" >
+
+        <section class="resume" id="resume">
             <div class="top-section">
                 <div class="name"></div>
                 <div class="AppliedFor"></div>
@@ -38,21 +39,23 @@
 
             <div class="Personal-info-grid">
                 <div class="Personal-info">Peronal Information</div>
-                <div class="phone"></div>
-                <div class="email"></div>
+                <div class="phone">8998798732</div>
+                <div class="email">Email ID@xxx.com </div>
                 <!--check this <a class ="myLink" id="myLink">LinkedIn</a> -->
                 <div class="Personal-info">Technical Skills</div>
-                <div class="keyword1"></div>
-                <div class="keyword2"></div>
-                <div class="keyword3"></div>
+                <div class="keyword1">HTML</div>
+                <div class="keyword2">JAVA</div>
+                <div class="keyword3">BASIC</div>
                 <div class="Personal-info">Hobbies</div>
-                <div class="hobby1"></div>
-                <div class="hobby2"></div>
-                <div class="hobby3"></div>
+                <div class="hobby1">EAT</div>
+                <div class="hobby2">SLEEP</div>
+                <div class="hobby3">RAVE</div>
+                <div class="hobby4">REPEAT</div>
             </div>
 
             <div class="MainBody">
-                <div class="headings">Work Experience in previous company</div>
+                
+                <div class="headings"><h2>Experience in previous company</h2></div>
                 <div class="CompanyName">Company Name:</div>
                 <div class="Position">Position:</div>
                 <div class="StartDate">Start Date:</div>
@@ -79,7 +82,7 @@
         </section>
 
 
-    <script src="resume-page.js"></script>
+        <script src="resume-page.js"></script>
     </section>
 </body>
 

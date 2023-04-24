@@ -1,3 +1,4 @@
+const resume = document.getElementById('resume');
 const noResume = document.getElementById('noResult');
 noResume.classList.add('hidden');
     let counter =0;
@@ -22,13 +23,16 @@ function fetchData(val) {
             const inputValue = document.getElementById('searchResume').value.toLowerCase();
             const filteredData = data.resume.filter(item => item.basics.AppliedFor.toLowerCase().includes(inputValue));
             filteredData.forEach(item =>{
-                console.log("reached FilteredData")
-                
+                console.log("reached FilteredData")                
             showResults(item)
             counter+=1;
+            noResume.classList.add('hidden'); 
+            resume.classList.remove('hidden');
         })
         if(counter == 0) {
-            noResume.classList.remove('hidden');
+            noResume.classList.remove('hidden');            
+            resume.classList.add('hidden');
+
         }
         })
         
@@ -145,10 +149,9 @@ function showResults(item) {
     
     let ISummaryElem=document.querySelector(".ISummary")
     const ISummary=`Summary : ${item.Internship.Summary}`;
-    ISummaryElem.innerText=ISummary;
+    ISummaryElem.innerText=ISummary
     
    let ASummaryElem=document.querySelector(".ASummary")
    ASummaryElem.innerHTML=`<ul><li> ${item.achievements.Summary}</li></ul>`
-
 }
 
